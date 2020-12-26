@@ -1,5 +1,5 @@
 
-名字: IBM Cloud Foundry - XRay
+name: IBM Cloud Foundry - XRay
 
 env:
   IBM_CF_API: https://api.eu-gb.cf.cloud.ibm.com
@@ -52,7 +52,7 @@ jobs:
         ./xray -version
         mv xray ${IBM_CF_APP_NAME}
 
-    - 名字: Generate XRay Config File (VMess)
+    - name: Generate XRay Config File (VMess)
       if: ${{ env.V2_WS_PATH_VMESS }}
       run: |
         base64 << 123 > config
