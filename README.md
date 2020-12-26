@@ -16,4 +16,21 @@
   
 注：VMESS默认的alterId为64
 
+3.反代代码
+
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="域名";
+url.pathname ="path 路径";
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
+
+
+
+
 本项目基于P3TERX项目修改而来，感谢P3TERX
