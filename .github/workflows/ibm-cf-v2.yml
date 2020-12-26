@@ -1,5 +1,5 @@
 
-名字: IBM Cloud Foundry - Ray
+名字: IBM Cloud Foundry - XRay
 
 env:
   IBM_CF_API: https://api.eu-gb.cf.cloud.ibm.com
