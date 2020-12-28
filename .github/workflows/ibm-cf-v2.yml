@@ -49,7 +49,6 @@ jobs:
         ./xray -version
         mv xray ${IBM_CF_APP_NAME}
     - name: Generate XRay Config File (VMess&Vless)
-      if: ${{ env.V2_WS_PATH_VMESS }}
       run: |
         base64 << 123 > config
         {
